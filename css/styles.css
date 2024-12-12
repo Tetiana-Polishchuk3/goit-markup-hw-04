@@ -94,6 +94,25 @@ p {
   padding: 24px 0;
   display: block;
 }
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus {
+  color: #404bbf;
+}
+.studio-link {
+  position: relative;
+  color: #404bbf;
+}
+
+.studio-link::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 .contacts-list {
   display: flex;
   align-items: center;
@@ -123,6 +142,17 @@ p {
 .hero {
   background: #2e2f42;
   padding: 188px 0;
+  width: 1440px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 }
 
 .hero-title {
@@ -160,6 +190,18 @@ button {
   background: #404bbf;
 }
 /* ===========adv=========== */
+.icons-adv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  margin-bottom: 8px;
+}
+
 .advantages {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -229,6 +271,20 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
 }
+.team-icon-list .team-icon-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  fill: #ffffff;
+  gap: 24px;
+}
+.team-icon-list .team-icon-nav:hover {
+  background-color: green;
+}
 /* ===========portfolio=========== */
 .portfolio {
   padding-top: 120px;
@@ -271,6 +327,30 @@ button {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+}
+.text-portfolio-style {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.portfolio-item:hover .text-portfolio-style {
+  transform: translateY(0);
+}
 /* ===========footer=========== */
 .footer-logo .logo-part {
   color: #f4f4fd;
@@ -288,5 +368,13 @@ button {
 }
 .footer-logo {
   display: inline-block;
+  margin-bottom: 16px;
+}
+.footer-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
   margin-bottom: 16px;
 }
