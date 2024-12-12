@@ -376,6 +376,8 @@ button {
 
 .portfolio-item:hover .text-portfolio-style {
   transform: translateY(0);
+}
+.portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -405,7 +407,7 @@ button {
 .logo-flex-column {
   margin-right: 120px;
 }
-.footer-media-container {
+.footer-container {
   display: flex;
   align-items: baseline;
 }
